@@ -56,7 +56,7 @@ export default function Navbar() {
 <div className="relative group cursor-pointer">
   {/* Usamos drop-shadow en lugar de box-shadow para que la sombra siga la forma de la imagen */}
   <img 
-    src="/logo1.png" 
+    src="./public/logo1.png" 
     alt="Logo Electricidad" 
     className="w-11 h-11 object-contain drop-shadow-md group-hover:drop-shadow-xl transition-all duration-300"
   />
