@@ -133,23 +133,6 @@ function ServiceCard({ service, index }) {
             </li>
           ))}
         </ul>
-
-        {/* Link */}
-        <a
-          href="#contacto"
-          onClick={(e) => {
-            e.preventDefault()
-            const el = document.querySelector('#contacto')
-            if (el) {
-              const top = el.getBoundingClientRect().top + window.pageYOffset - 80
-              window.scrollTo({ top, behavior: 'smooth' })
-            }
-          }}
-          className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-700 group/link"
-        >
-          Consultar
-          <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-        </a>
       </div>
     </motion.div>
   )

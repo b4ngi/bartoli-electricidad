@@ -53,12 +53,17 @@ export default function Navbar() {
             onClick={(e) => handleLinkClick(e, '#hero')}
             className="flex items-center gap-2 group"
           >
-            <div className="relative">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-lg shadow-primary-500/30 group-hover:shadow-primary-500/50 transition-shadow">
-                <Zap className="w-5 h-5 text-white" strokeWidth={2.5} fill="white" />
-              </div>
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
-            </div>
+<div className="relative group cursor-pointer">
+  {/* Usamos drop-shadow en lugar de box-shadow para que la sombra siga la forma de la imagen */}
+  <img 
+    src="/logo1.png" 
+    alt="Logo Electricidad" 
+    className="w-11 h-11 object-contain drop-shadow-md group-hover:drop-shadow-xl transition-all duration-300"
+  />
+  
+  {/* El puntito amarillo se reposiciona ligeramente para encajar con la forma circular */}
+  <div className="absolute top-0 right-0 w-3 h-3 bg-yellow-400 rounded-full animate-pulse border-2 border-white"></div>
+</div>
             <div>
               <div className="font-display font-bold text-lg text-dark-900 leading-none">Bartoli</div>
               <div className="text-[10px] uppercase tracking-widest text-primary-600 font-semibold">Electricidad</div>
